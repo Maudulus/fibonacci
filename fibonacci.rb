@@ -12,5 +12,9 @@ def fibonacci(nth_number)
 
 	puts fibonacci
 end 	
-puts Benchmark.measure { fibonacci(1000) }
+puts Benchmark.measure { fibonacci(1000) } # 0.003seconds
+puts Benchmark.measure { fibonacci(10000) } # 0.015 seconds
+puts Benchmark.measure { fibonacci(100000) } # 0.646 seconds
+puts Benchmark.measure { fibonacci(1000000) } #41.755 seconds
+
 
