@@ -1,3 +1,4 @@
+require 'benchmark'
 def fibonacci(nth_number)
 	previous_number = 0 
 	prev_holder = ""
@@ -11,4 +12,5 @@ def fibonacci(nth_number)
 
 	puts fibonacci
 end 	
+puts Benchmark.measure { fibonacci(1000) }
 
